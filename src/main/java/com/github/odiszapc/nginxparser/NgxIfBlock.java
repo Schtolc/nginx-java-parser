@@ -22,7 +22,7 @@ public class NgxIfBlock extends NgxBlock {
 
     public String toString() {
         Iterator<NgxToken> tokenIterator = super.getTokens().iterator();
-        StringBuilder builder = new StringBuilder(tokenIterator.next() + "(");
+        StringBuilder builder = new StringBuilder(tokenIterator.next() + " (");
         while(tokenIterator.hasNext()) {
             builder.append(tokenIterator.next()).append(" ");
         }
